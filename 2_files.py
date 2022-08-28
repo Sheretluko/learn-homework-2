@@ -12,11 +12,19 @@
 """
 
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+    with open('referat.txt', 'r', encoding = 'utf-8') as f:
+        text = f.read()
+    print(f"Длина строки {len(text)} символов.")
+    print()
+
+    text_modified = text.split()
+    print(f"Количество слов в тексте: {len(text_modified)}")
+    print()
+
+    text_replaced = text.replace('.', '!')
+    print(f"Текст после замены точек на восклицательные знаки")
+    print(text_replaced)
 
 if __name__ == "__main__":
     main()
+    
