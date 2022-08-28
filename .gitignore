@@ -122,3 +122,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 referat.txt
+personal_list.csv
